@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AnonymoX __MSG_Options__</title>
+	<link rel="stylesheet" href="design/style.css" />
+</head>
+<body>
+	<div class="page-width">
+		<h1 data-message="Options">__MSG_Options__</h1>
+
+		<div id="settings-ok" data-message="settings_ok"></div>
+		<div id="settings-error" data-message="settings_error"></div>
+
+		<div style="height: 20px;"></div>
+
+		<div class="section-head" data-message="Anonymous_ID">__MSG_Anonymous_ID__</div>
+		<div class="section">
+			<div class="message" data-message="Options_info">__MSG_Options_info__</div>
+
+			<div class="label" data-message="Username">__MSG_Username__:</div>
+			<input type="text" id="username" class="right" disabled>
+			<div class="clear"></div>
+			
+			<div class="label" data-message="Password">__MSG_Password__:</div>
+			<input type="text" id="password" class="right" disabled>
+			<div class="clear"></div>
+
+			<button id="save-button" style="float: right; display: none;" data-message="Save">__MSG_Save__</button>
+			<div class="clear"></div>
+		</div>
+
+		<div class="section-head" data-message="activate_premium_code"></div>
+		<div class="section">
+			<div id="hideIfPremium">
+				<input type="text" id="premium-code" style="width: 180px;">
+				<button id="premium-activate" style="float: right;" data-message="Activate"></button>
+			</div>
+			<div id="showIfPremium" style="display:none;">
+				<div class="message" data-message="premium_is_active"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/start.js"></script>
+	<script src="js/views/options.js"></script>
+	<script src="js/views/premiumcode.js"></script>
+</body>
+</html>

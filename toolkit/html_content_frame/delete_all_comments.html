@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delete all visible comments</title>
+    <link rel="stylesheet" type="text/css" href="/css_vendor/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css_vendor/toastr.css">
+
+    <script type="text/javascript" src="/js_vendor/jquery.js"></script>
+    <script type="text/javascript" src="/js_vendor/toastr.js"></script>
+    <script type="text/javascript" src="/js_vendor/toastr_opts.js"></script>
+    <script type="text/javascript" src="/js_vendor/popper.js"></script>
+    <script type="text/javascript" src="/js_vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="/js_frame/global_frame.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css_frame/global_frame.css">
+
+    <link rel="stylesheet" type="text/css" href="/css_frame/delete_all_comments.css">
+    <script defer type="text/javascript" src="/dart_frame/delete_all_comments.dart.js"></script>
+</head>
+<body>
+
+<div class="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light primary-color">
+        <a class="navbar-brand">
+            Delete all visible comments
+        </a>
+        <div class="float-right">
+            <button class="btn btn-danger close_frame" type="submit">Close</button>
+        </div>
+    </nav>
+
+    <!-- delay time starts -->
+    <div class="card">
+        <div class="card-body">
+            <p>
+                Read our
+                <a target="_blank" href="http://www.toolkit-for-fb.com/how-to-delete-all-visible-comments-fb/">
+                    online documentation
+                </a>
+                to learn how to use this tool.
+            </p>
+            <div class="form-group">
+                <label for="delay">Select time interval between deletion of comments</label>
+                <select class="form-control input_class" id="delay">
+                    <option value="1">1 Second</option>
+                    <option value="2">2 Seconds</option>
+                    <option value="3">3 Seconds</option>
+                    <option value="4" selected="selected">4 Seconds</option>
+                    <option value="5">5 Seconds</option>
+                    <option value="10">10 Seconds</option>
+                    <option value="15">15 Seconds</option>
+                    <option value="20">20 Seconds</option>
+                    <option value="25">25 Seconds</option>
+                    <option value="30">30 Seconds</option>
+                    <option value="60">1 Minute</option>
+                    <option value="300">5 Minutes</option>
+                    <option value="600">10 Minutes</option>
+                    <option value="1200">20 Minutes</option>
+                    <option value="1800">30 Minutes</option>
+                    <option value="3600">60 Minutes</option>
+                </select>
+            </div>
+            <!-- submit buttons -->
+            <div class="text-center">
+                <button class="btn btn-primary input_class" id="start">
+                    Start Deleting
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- delay time ends -->
+</div>
+
+<script async defer type="text/javascript" src="/js_vendor/analytics.js"></script>
+</body>
+
+</html>

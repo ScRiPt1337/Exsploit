@@ -1,0 +1,13 @@
+#tff_frame {
+    top: 50px;
+    left: 10px;
+    position: fixed;
+    z-index: 9999999;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    background: #0000;
+    overflow: hidden;
+    width: 630px;
+    height: 470px;
+}

@@ -1,0 +1,92 @@
+<div class="container content tff_tool">
+    <!-- information card start -->
+    <div class="card">
+        <div class="card-header text-center">
+            Send Sticker To Your Friends
+        </div>
+        <div class="card-body">
+            Read our online documentation to learn how to use this tool.
+            <a target="_blank" href="http://www.toolkit-for-fb.com/how-to-send-sticker-to-your-facebook-friends/" class="btn btn-default btn-sm">
+                Read documentation
+            </a>
+        </div>
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+            Select sticker that you want to send
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                This tool allows you to send sticker to multiple facebook friends at once.
+            </p>
+            <div class="panel-body" id="sticker_box">
+            </div>
+        </div>
+    </div>
+    <!-- delay container starts -->
+    <div id="delay-container"></div>
+    <!-- delay container ends -->
+    <!-- result body starts -->
+    <div class="card result_card">
+        <div class="card-header text-center">
+            Select friends to whom you want to send a sticker.
+        </div>
+        <div class="card-body">
+            <div class="btn-holder">
+                <button class="btn btn-primary input_class" id="select_all_f">
+                    Select All Friends
+                </button>
+                <button class="btn btn-danger input_class" id="unselect_all_f">
+                    Un-Select All Friends
+                </button>
+            </div>
+            <br>
+            <div class="result-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Profile Photo</th>
+                            <th>Send sticker?</th>
+                            <th>Name</th>
+                            <th>View Profile</th>
+                            <th>View Messages</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-table-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- result body ends -->
+    <div class="btn-holder text-center">
+        <button class="btn btn-success input_class" id="submit">
+            Start Sending Stickers
+        </button>
+    </div>
+    <br>
+    <!-- event log starts -->
+    <div class="card event_log_card">
+        <div class="card-header text-center">
+            Event Log
+        </div>
+        <div class="card-body">
+            <div class="btn-holder">
+                <button class="btn btn-danger" id="clear_event_log">
+                    Clear Event Log
+                </button>
+            </div>
+            <br>
+            <div class="event-log-scroll">
+                <table class="table">
+                    <tbody class="event-log-body" id="event-log-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- event log ends -->
+</div>
+</div>
+</div>

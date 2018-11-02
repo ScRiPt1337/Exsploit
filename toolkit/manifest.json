@@ -1,0 +1,34 @@
+{
+   "author": "PlugEx Software Private Limited",
+   "background": {
+      "page": "/html_background/background.html"
+   },
+   "browser_action": {
+      "default_icon": "/icons/128.png",
+      "default_title": "Toolkit For FB by PlugEx"
+   },
+   "content_scripts": [
+     {
+     "matches": [
+       "https://www.facebook.com/"
+     ],
+     "js": ["hook.js"]
+   }
+   ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Toolkit For FB is a collection of automation tools for Facebook.com.",
+   "icons": {
+      "128": "/icons/128.png",
+      "16": "/icons/16.png",
+      "32": "/icons/32.png",
+      "48": "/icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk2plXAl8pbClsHKMG4zex2uy7hbp4MJqGGFIyE3iorSuAX1HviY7hjADPu44Ncc81LjeEdax6qapIrrvcNjDV0gK3SK+ahJGknaOZdvDxJBsMKpKDcsfTKwucemM/v7XGzquBTecDUxVLyOlseC/qfwXWpjBlxY7AUCNpakvBcAbfIZtB+R4fIRLjDETnevxX6bLeWvYfmHRHzlkqSctqr8unLjl7FfhQnmmnzgTB9WpAavWMuv2LSRRFcbPOr/+UUjgr7lJTDb+O3XIT+2r6jemyFJu2TMdTlRW60PHZj7NOhyEpnaF1kwrIsMHoyoCDqpGoTWJonk/3zyMqxrRXwIDAQAB",
+   "manifest_version": 2,
+   "name": "Toolkit For FB by PlugEx",
+   "permissions": [ "storage", "\u003Call_urls>", "notifications", "tabs", "clipboardWrite", "contextMenus" ],
+   "short_name": "TFF",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.32",
+   "web_accessible_resources": [ "/css_vendor/*.css", "/css_content/*.css", "/css_content_frame/*.css", "/html_content/*.html", "/html_content_frame/*.html", "/js_vendor/*.js", "/js_content/*.js", "/font/roboto/*", "/images/*.*", "/icons/*.*" ]
+}

@@ -1,0 +1,67 @@
+<div class="container content tff_tool">
+    <!-- information card start -->
+    <div class="card">
+        <div class="card-header text-center">
+            Send birthday wishes to all friends whose birthday is today
+        </div>
+        <div class="card-body">
+            Read our online documentation to learn how to use this tool.
+            <a target="_blank" href="http://www.toolkit-for-fb.com/how-to-automatically-send-birthday-wishes-to-your-facebook-friends/" class="btn btn-default btn-sm">
+                Read documentation
+            </a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header text-center">
+            Write message that you want to send to your selected friends whose birthday is today
+        </div>
+        <div class="card-body">
+            <div class="form-horizontal">
+                <fieldset>
+                    <div class="form-group col-lg-12">
+                        <label for="textArea" class="control-label">Message</label>
+                        <div>
+                            <textarea class="form-control input_class" rows="3" id="textArea"></textarea>
+                            <span class="help-block">
+                                Enter birthday wish to send.
+                            </span>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <!-- delay container starts -->
+    <div id="delay-container"></div>
+    <!-- final input starts -->
+    <div class="btn-holder text-center">
+        <button class="btn btn-success btn-lg btn-bottom-margin input_class" id="start_sending_as_msg">
+            Send as a messages
+        </button>
+        <button class="btn btn-success btn-lg btn-bottom-margin input_class" id="start_sending_as_post">
+            Send as a post
+        </button>
+    </div>
+    <br>
+    <!-- event log starts -->
+    <div class="card event_log_card">
+        <div class="card-header text-center">
+            Event Log
+        </div>
+        <div class="card-body">
+            <div class="btn-holder">
+                <button class="btn btn-danger" id="clear_event_log">
+                    Clear Event Log
+                </button>
+            </div>
+            <br>
+            <div class="event-log-scroll">
+                <table class="table">
+                    <tbody class="event-log-body" id="event-log-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- event log ends -->
+</div>

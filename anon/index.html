@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="design/style.css" />
+</head>
+<body>
+	
+	<div id="messages">
+	</div>
+
+	<div id="failureMsg" style="display: none;">
+		<h1 data-message="no_connection"></h1>
+		<span data-message="will_try_reconnect"></span>
+	</div>
+
+	<div id="loading" style="display: none;">
+		<div id="spinner"></div>
+		<div class="loadtext shining" data-message="loadtext">__MSG_loadtext__</div>
+	</div>
+
+	<div id="panel-left">
+		<div class="label"><span data-message="Country">__MSG_Country__</span>:</div>
+		<div class="clear"></div>
+		<div class="dropdown">
+			<div class="dropdown-arrow"></div>
+			<div class="items">
+				<div><img src="design/skin/flags/world.png" /> <span data-message="All">__MSG_All__</span></div>
+			</div>
+		</div>
+	</div>
+	<div id="panel-right">
+		<div class="label"><span data-message="Identity">__MSG_Identity__</span>:</div>
+		<div class="clear"></div>
+		<div id="identities">
+		</div>
+	</div>
+	<div class="clear"></div>
+
+	<button id="change-identity" data-message="Change_Identity"></button>
+
+	<div id="button-panel">
+		<div class="label">anonymoX <span data-message="is">__MSG_is__</span></div>
+		<div class="checkbox">
+			<input type="checkbox" id="status" name="check" />
+			<label id ="status-label" for="status"></label>
+		</div>
+	</div>
+
+	<script src="js/start.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/external/spin.min.js"></script>
+
+	<script src="js/views/loading.js"></script>
+	<script src="js/views/identities.js"></script>
+	<script src="js/views/status.js"></script>
+	<script src="js/views/messages.js"></script>
+	<script src="js/views/identityswitch.js"></script>
+
+</body>
+</html>

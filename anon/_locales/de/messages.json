@@ -1,0 +1,109 @@
+{
+   "Activate": {
+      "message": "Aktivieren"
+   },
+   "Ads_by_anonymoX": {
+      "message": "Werbung von anonymoX"
+   },
+   "All": {
+      "message": "Alle"
+   },
+   "Anonymous_ID": {
+      "message": "Anonyme ID"
+   },
+   "Change_Identity": {
+      "message": "Identität wechseln"
+   },
+   "Close": {
+      "message": "Schließen"
+   },
+   "Country": {
+      "message": "Land"
+   },
+   "Disable": {
+      "message": "Deaktivieren"
+   },
+   "Identity": {
+      "message": "Identitäten"
+   },
+   "OFF": {
+      "message": "Aus"
+   },
+   "ON": {
+      "message": "An"
+   },
+   "Options": {
+      "message": "AnonymoX Optionen"
+   },
+   "Options_info": {
+      "message": "Diese automatisch generierten Kontodaten werden zum Login im anonymoX-Netzwerk benötigt. Sie dienen nur als Referenz für unseren Support."
+   },
+   "Password": {
+      "message": "Passwort"
+   },
+   "Save": {
+      "message": "Speichern"
+   },
+   "Selected_proxy_offline": {
+      "message": "Ausgwählter Proxy ist anscheinend offline, bitte einen neuen wählen!"
+   },
+   "Username": {
+      "message": "Benutzername"
+   },
+   "activate_premium_code": {
+      "message": "Aktiviere Premium Code"
+   },
+   "appDesc": {
+      "description": "Einfaches anonymes Surfen. Ändern der IP und des Landes. Besuchen blockierter/zensierter Websites. Wir stellen die Proxys, keine externen Proxys oder sonstige Programme benötigt.",
+      "message": "Einfaches anonymes Surfen"
+   },
+   "appName": {
+      "description": "anonymoX",
+      "message": "anonymoX"
+   },
+   "here": {
+      "message": "hier"
+   },
+   "is": {
+      "message": "ist"
+   },
+   "loadtext": {
+      "message": "AnonymoX lädt"
+   },
+   "no_connection": {
+      "message": "AnonymoX kann sich momentan nicht verbinden."
+   },
+   "no_more_proxies_for_country": {
+      "message": "Es sind keine Proxy Server für das aktuell ausgewählte Land verfügbar!"
+   },
+   "nofunction": {
+      "message": "AnonymoX funktioniert nicht"
+   },
+   "premium_activate_error": {
+      "message": "Ein Problem ist aufgetreten während versucht wurde Premium zu aktivieren:"
+   },
+   "premium_is_active": {
+      "message": "Premium ist aktiv!"
+   },
+   "premium_network_error": {
+      "message": "Ein Netzwerkproblem ist aufgetreten während versucht wurde Premium zu aktivieren. Bitte versuchen Sie es erneut!"
+   },
+   "premium_was_activated": {
+      "message": "Premium wurde aktiviert!"
+   },
+   "premium_was_deactivated": {
+      "message": "Premium ist abgelaufen und wurde deaktiviert!"
+   },
+   "reasonmsg": {
+      "message": "Ursachen hierfür findest du"
+   },
+   "settings_error": {
+      "message": "Benutzername and Passwort Kombination ist falsch!"
+   },
+   "settings_ok": {
+      "message": "Benutzername and Passwort erfolgreich geändert!"
+   },
+   "will_try_reconnect": {
+      "message": "Es wird versucht eine Verbindung aufzubauen ..."
+   }
+}

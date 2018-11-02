@@ -1,0 +1,391 @@
+body {
+	width: 245px;
+	height: 235px;
+	background-color: #232627;
+	background-image: -webkit-linear-gradient( 0deg, hsla(0,0%,100%,0) 0px, hsla(0,0%,100%,.09) 50%, hsla(0,0%,100%,0) 100% );
+	color: #3BF;
+	font-family: Helvetica, Aria, sans-serif;
+}
+
+body * {
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+input {
+	-webkit-user-select: text;
+	cursor: text;
+}
+
+#tabbar {
+	position: absolute;
+	z-index: 5;
+	height: 30px;
+	background: rgb(230, 230, 230);
+}
+
+#tabbar > div {
+	float: left;
+	height: 25px;
+	margin-right: 1px;
+	padding: 5px 5px 0 5px;
+	border-radius: 4px 4px 0 0;
+	border: 2px solid white;
+	border-bottom: none;
+	background: rgb(230, 230, 230);
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+#tabbar > div.active {
+	border: 2px solid grey;
+	border-bottom: 2px solid rgb(210, 210, 210);
+	background: rgb(210, 210, 210);
+}
+
+.tab {
+	display: none;
+	position: absolute;
+	top: 40px;
+	width: 220px;
+	height: 176px;
+	padding: 10px;
+	background: rgb(210, 210, 210);
+	border: 2px solid grey;
+}
+
+.tab.active {
+	display: block;
+}
+
+#panel-left {
+	float: left;
+	width: 110px;
+}
+
+#panel-right {
+	width: 130px;
+	float: right;
+}
+
+.dropdown {
+	-webkit-appearance: menulist-button;
+	float: left;
+	position: relative;
+	border: 1px solid grey;
+}
+
+.dropdown-arrow {
+	float: right;
+	width: 10px;
+}
+
+.dropdown > div:nth-child(2) {
+	float: left;
+}
+
+.dropdown-arrow, .dropdown > div:nth-child(2) {
+	padding: 5px;
+}
+
+.dropdown .items {
+	z-index: 5;
+	position: absolute;
+	top: 31px;
+	left: 0;
+	right: 0;
+	clear: both;
+	outline: 1px solid grey;
+	background: white;
+	box-shadow: 0 0 10px rgb(240, 240, 240);
+}
+
+.dropdown .items > div {
+	padding: 5px;
+}
+
+.dropdown .items > div:hover {
+	background: #3399FF;
+}
+
+#identities {
+	float: left;
+	width: 100px;
+	height: 140px;
+	overflow-y: scroll;
+	border: 1px solid grey;
+	background: white;
+}
+
+#identities > div {
+	padding: 2px 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#identities > div:hover {
+	background: #3399FF;
+}
+
+#identities > div:active, #identities > div.selected {
+	background: grey;
+}
+
+#disablebutton {
+	height: 40px;
+	margin-top: 20px;
+}
+
+.clear {
+	clear: both;
+	width: 0px;
+	height: 0px;
+}
+
+.label {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+#change-identity {
+	margin-top: 10px;
+	margin-left: 117px;
+	height: 24px;
+	border-radius: 50px;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+}
+
+#change-identity:focus {
+	outline: none;
+}
+
+#button-panel {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 205px;
+}
+
+#button-panel > .checkbox {
+	position: absolute;
+	top: -23px;
+	right: 0;
+}
+
+.page-width {
+	width: 400px;
+}
+
+#settings-ok {
+	display: none;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 500ms;
+	color: rgb(100, 200, 100);
+}
+
+#settings-error {
+	display: none;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 500ms;
+	color: rgb(200, 100, 100);
+}
+
+.section-head {
+	margin: 10px 0px 2px 10px;
+}
+
+.section {
+	width: 270px;
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(100,100,100, 0.3);
+	box-shadow: inset 0 0 3px 3px rgb(70,70,70);
+}
+
+.section .message {
+	margin-bottom: 10px;
+	font-size: 13px;
+	color: lightgray;
+}
+
+.section input.right {
+	float: right;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+/* custom checkbox */
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.checkbox {
+	width: 80px;
+	height: 26px;
+	background: #333;
+	margin: 20px auto;
+
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.checkbox:after {
+	content: '__MSG_OFF__';
+	font: 12px/26px Arial, sans-serif;
+	color: #8CA0A0;
+	position: absolute;
+	right: 10px;
+	z-index: 0;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+}
+
+.checkbox:before {
+	content: '__MSG_ON__';
+	font: 12px/26px Arial, sans-serif;
+	color: #00bf00;
+	position: absolute;
+	left: 10px;
+	z-index: 0;
+	font-weight: bold;
+}
+
+.checkbox label {
+	display: block;
+	width: 34px;
+	height: 20px;
+
+	border-radius: 50px;
+
+	cursor: pointer;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 1;
+
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+}
+
+.checkbox label.animated {
+	-webkit-transition: all .4s ease;
+}
+
+.checkbox input[type=checkbox]:checked + label {
+	left: 43px;
+}
+
+
+#loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 260px;
+	height: 250px;
+	z-index: 10;
+	background: rgba(150,150,150, 0.8);
+	transition: opacity .25s ease-in-out;
+}
+
+#loading .loadtext {
+	position: absolute;
+	bottom: 35px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	-webkit-animation-name: changecolor;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.fadeout {
+	opacity: 0;
+}
+
+@-webkit-keyframes changecolor
+{
+    0%
+    {
+        color: rgb(100, 100, 100);
+    }
+    50%
+    {
+        color: #3BF;
+    }
+    100%
+    {
+        color: rgb(100, 200, 100);
+    }
+}
+
+#spinner {
+	position: absolute;
+	top: 120px;
+	left: 135px;
+}
+
+#failureMsg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	padding-left: 5px;
+	background: #000;
+}
+
+#failureMsg h1 {
+	font-size: 17px;
+	color: rgb(200,100,100);
+}
+
+#failureMsg a {
+	color: white;
+}
+
+#messages {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgb(220,130,120);
+	z-index: 10;
+}
+
+#messages > div {
+	box-sizing: border-box;
+	position: relative;
+	width: 99%;
+	padding: 5px;
+	padding-right: 25px;
+	margin: 2px auto;
+	border: 1px solid rgb(250,200,200);
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: lighter;
+	color: rgb(255,230,200);
+}
+
+#messages .close {
+	position: absolute;
+	cursor: pointer;
+	top: 5px;
+	right: 5px;
+	width: 15px;
+	height: 15px;
+	background: rgb(190,100,100);
+	text-align: center;
+	line-height: 12px;
+}
+

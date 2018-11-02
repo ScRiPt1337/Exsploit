@@ -1,0 +1,109 @@
+{
+   "Activate": {
+      "message": "Activate"
+   },
+   "Ads_by_anonymoX": {
+      "message": "Ads by anonymoX"
+   },
+   "All": {
+      "message": "All"
+   },
+   "Anonymous_ID": {
+      "message": "Anonymous ID"
+   },
+   "Change_Identity": {
+      "message": "Change Identity"
+   },
+   "Close": {
+      "message": "Close"
+   },
+   "Country": {
+      "message": "Country"
+   },
+   "Disable": {
+      "message": "Disable"
+   },
+   "Identity": {
+      "message": "Identity"
+   },
+   "OFF": {
+      "message": "Off"
+   },
+   "ON": {
+      "message": "On"
+   },
+   "Options": {
+      "message": "AnonymoX Options"
+   },
+   "Options_info": {
+      "message": "This automatically generated account is used to login with the anonymoX network. It is displayed here only for support reference."
+   },
+   "Password": {
+      "message": "Password"
+   },
+   "Save": {
+      "message": "Save"
+   },
+   "Selected_proxy_offline": {
+      "message": "Selected proxy appears to be offline, please choose another!"
+   },
+   "Username": {
+      "message": "Username"
+   },
+   "activate_premium_code": {
+      "message": "Activate Premium Code"
+   },
+   "appDesc": {
+      "description": "Easy anonymous web browsing. Change your IP-Address and country. Visit blocked or censored websites. We provide the proxy servers, no external proxies or other programs required",
+      "message": "Easy anonymous web browsing"
+   },
+   "appName": {
+      "description": "anonymoX",
+      "message": "anonymoX"
+   },
+   "here": {
+      "message": "here"
+   },
+   "is": {
+      "message": "is"
+   },
+   "loadtext": {
+      "message": "AnonymoX is loading"
+   },
+   "no_connection": {
+      "message": "AnonymoX cannot connect at the moment."
+   },
+   "no_more_proxies_for_country": {
+      "message": "There are no proxy servers for your currently selected country available!"
+   },
+   "nofunction": {
+      "message": "AnonymoX isn't working"
+   },
+   "premium_activate_error": {
+      "message": "A Problem occured while trying to activate premium:"
+   },
+   "premium_is_active": {
+      "message": "Premium is active!"
+   },
+   "premium_network_error": {
+      "message": "A network Problem occured while trying to activate premium. Please try again!"
+   },
+   "premium_was_activated": {
+      "message": "Premium was activated!"
+   },
+   "premium_was_deactivated": {
+      "message": "Premium has run out and was deactivated!"
+   },
+   "reasonmsg": {
+      "message": "Reasons for this you find"
+   },
+   "settings_error": {
+      "message": "Username and Password combination is wrong!"
+   },
+   "settings_ok": {
+      "message": "Username and Password set successfully!"
+   },
+   "will_try_reconnect": {
+      "message": "It will try to reconnect ..."
+   }
+}

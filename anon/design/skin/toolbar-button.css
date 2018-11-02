@@ -1,0 +1,23 @@
+#anonymox-button {
+    list-style-image: url("chrome://anonymox/skin/icon24.png");
+    -moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+
+#anonymox-button[disabled="true"] {
+    list-style-image: url("chrome://anonymox/skin/icon-disabled24.png");
+    -moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+
+#anonymox-fastsetpanel {
+    list-style-image: none;
+}
+
+toolbar[iconsize="small"] #anonymox-button {
+    list-style-image: url("chrome://anonymox/skin/icon16.png");
+    -moz-image-region: rect(0 16px 16px 0);
+}
+
+toolbar[iconsize="small"] #anonymox-button[disabled="true"] {
+    list-style-image: url("chrome://anonymox/skin/icon-disabled16.png");
+    -moz-image-region: rect(0 16px 16px 0);
+}

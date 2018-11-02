@@ -1,0 +1,76 @@
+<div class="container content tff_tool">
+    <!-- information card start -->
+    <div class="card">
+        <div class="card-header text-center">
+            Follow multiple Facebook pages
+        </div>
+        <div class="card-body">
+            Read our online documentation to learn how to use this tool.
+            <a target="_blank" href="http://www.toolkit-for-fb.com/how-to-follow-multiple-all-facebook-pages/" class="btn btn-default btn-sm">
+                Read documentation
+            </a>
+        </div>
+    </div>
+    <!-- delay container starts -->
+    <div id="delay-container"></div>
+    <!-- delay container ends -->
+    <!-- result body starts -->
+    <div class="card result_card">
+        <div class="card-header text-center">
+            Select pages to follow.
+        </div>
+        <div class="card-body">
+            <div class="btn-holder">
+                <button class="btn btn-primary input_class" id="select_all">
+                    Select all pages
+                </button>
+                <button class="btn btn-danger input_class" id="unselect_all">
+                    Un-Select all pages
+                </button>
+            </div>
+            <div class="result-body">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>follow?</th>
+                        <th>Page name</th>
+                        <th>Page ID</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody id="result-table-tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- result body ends -->
+    <div class="btn-holder text-center">
+        <button class="btn btn-success btn-lg input_class" id="start">
+            Start to follow Facebook pages
+        </button>
+    </div>
+    <br>
+    <!-- event log starts -->
+    <div class="card event_log_card">
+        <div class="card-header text-center">
+            Event Log
+        </div>
+        <div class="card-body">
+            <div class="btn-holder">
+                <button class="btn btn-danger" id="clear_event_log">
+                    Clear Event Log
+                </button>
+            </div>
+            <br>
+            <div class="event-log-scroll">
+                <table class="table">
+                    <tbody class="event-log-body" id="event-log-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- event log ends -->
+</div>

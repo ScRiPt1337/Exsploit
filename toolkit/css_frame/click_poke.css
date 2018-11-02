@@ -1,0 +1,9 @@
+html{
+    border: 1px solid #ddd;
+}
+body,html{
+    background: #0000;
+}
+.panel{
+    margin-bottom: 0px;
+}
