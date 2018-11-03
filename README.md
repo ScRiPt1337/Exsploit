@@ -15,6 +15,9 @@ Exsploit create malicious chrome extension to steal facebook account password
 5> Done()
 
 
+Developer mode should be on in victim device
+
+
 
 ![Screenshot](https://github.com/ScRiPt1337/Exsploit/blob/master/Screenshot_2018-11-03_04-24-52.png)
 
