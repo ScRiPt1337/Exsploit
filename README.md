@@ -14,6 +14,7 @@ Exsploit create malicious chrome extension to steal facebook account password
 
 5> Done()
 
+video = https://www.facebook.com/script1337/videos/345138686260627/
 
 Make sure that Developer mode is on in victim device
 
