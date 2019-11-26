@@ -14,7 +14,7 @@ Exsploit create malicious chrome extension to steal facebook account password
 
 5> Done()
 
-video = https://www.facebook.com/Encodedweapon/videos/435625923509305/
+# https://www.facebook.com/Script1337/
 
 https://www.youtube.com/watch?v=EmTEDQBTAdw&t=8s
 
